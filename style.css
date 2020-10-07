@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+    font-family: 'Codec Pro';
+    src: local('Codec Pro Thin'), local('Codec-Pro-Thin'),
+        url('CodecPro-Thin.woff2') format('woff2'),
+        url('CodecPro-Thin.woff') format('woff'),
+        url('CodecPro-Thin.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+  }
+
+.container {
+  width: 1440px;
+  height: auto;
+  position: relative;
+  background: #FCFCFC;
+
+}
+
+.content {
+  width: 1312px;
+  margin-left: 64px;
+  margin-right: 64px;
+  margin-top: 52px;
+  height: auto;
+  position: relative;
+  background: #FCFCFC;
+}
+
+/* header */
+
+.logo {
+  position: absolute;
+  left: 0%;
+  right: 96.34%;
+  top: 7.14%;
+  bottom: 7.14%;
+  background: #FCFCFC;
+}
+
+.ellipse6 {
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  left: 16px;
+  top: 22px;
+}
+
+.ellipse7 {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  left: 31px;
+  top: 3px;
+}
+
+.ellipse8 {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  left: 9px;
+  top: 14px;
+}
+
+.pepelane {
+  position: absolute;
+  width: 104.2px;
+  height: 20.62px;
+  left: 65.9px;
+  top: 17.49px;
+}
+
+.headerText {
+  position: absolute;
+  width: 255px;
+  height: 24px;
+  left: 235px;
+  top: 16px;
+
+  font-family: 'Codec Pro';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 152%;
+  color: #677B8F;
+}
+
+.nightMode {
+  position: absolute;
+  left: 8.33%;
+  right: 8.33%;
+  top: 8.33%;
+  bottom: 8.33%;
+}
+
+.userName {
+  position: absolute;
+  width: 109px;
+  height: 24px;
+  left: 1131px;
+  top: 16px;
+  font-family: Codec Pro;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 152%;
+  color: #012345;
+}
+
+.userPhoto {
+  position: absolute;
+  width: 56px;
+  height: 56px;
+  left: 1256px;
+  top: 0px;
+  background: url(.png);
+}
