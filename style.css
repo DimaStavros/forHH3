@@ -79,14 +79,16 @@ a {
 }
 
 .logoText {
-  line-height: 24px;
   width: 255px;
   height: 24px;
+  line-height: 24px;
   font-family: 'Codec Pro';
-  color: #677B8F;
-  margin-left: 64.9px;
-  margin-top: 64px;
+  font-style: normal;
+  font-weight: 300;
   font-size: 16px;
+  color: #677B8F;
+  margin-top: 64px;
+  margin-left: 64.9px;
 }
 
 .nightMode {
@@ -113,7 +115,7 @@ a {
 }
 
 .userName {
-  margin-left: 106px;
+  margin-left: 96px;
   margin-top: 64px;
   width: 109px;
   height: 24px;
@@ -124,14 +126,11 @@ a {
 }
 
 .userPhoto {
-  width: 56px;
-  height: 56px;
-  margin-left: 16px;
   margin-top: 48px;
+  margin-left: 12px;
 }
 
 .userPhoto img {
-  border: 1px solid rgb(255, 255, 255);
   border-radius: 40px;
 }
 
@@ -241,7 +240,7 @@ a {
   margin-top: 12px;
 }
 
-#cost {
+.rentObjText .cost {
   font-family: 'Codec Pro';
   font-weight: bold;
   font-size: 14px;
