@@ -183,12 +183,18 @@ a {
 }
 
 .addButton {
+  display: flex;
   margin-left: 20px;
   margin-top: 56px;
+  width: 48px;
+  height: 48px;
+  background-color: #4959FF;
+  border-radius: 16px;
+  justify-content: center;
 }
 
 .addButton img {
-  position: relative;
+  margin-top: 17px;
 }
 
 .ButtonСross {
