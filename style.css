@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 a {
@@ -16,110 +17,233 @@ a {
     font-weight: 100;
     font-style: normal;
   }
+@font-face {
+      font-family: 'Codec Pro';
+      src: local('Codec Pro Bold'), local('Codec-Pro-Bold'),
+          url('CodecPro-Bold.woff2') format('woff2'),
+          url('CodecPro-Bold.woff') format('woff'),
+          url('CodecPro-Bold.ttf') format('truetype');
+      font-weight: 700;
+      font-style: normal;
+    }
+
 
 .container {
-  width: 1440px;
-  height: auto;
-  position: relative;
-  background: #FCFCFC;
-
+  max-width: 1440px;
+  height: 100%;
 }
 
 .content {
-  width: 1312px;
+  max-width: 1312px;
   margin-left: 64px;
   margin-right: 64px;
-  margin-top: 52px;
   height: auto;
-  position: relative;
-  background: #FCFCFC;
 }
 
 /* header */
 
+.topMenu {
+  display: flex;
+  height: 144px;
+}
+
 .logo {
-  position: absolute;
-  left: 0%;
-  right: 96.34%;
-  top: 7.14%;
-  bottom: 7.14%;
-  background: #FCFCFC;
+  width: 48px;
+  height: 48px;
+  margin-top: 52px;
 }
 
 .ellipse6 {
   position: absolute;
-  width: 23px;
-  height: 23px;
-  left: 16px;
-  top: 22px;
+  margin-left: 16px;
+  margin-top: 22px;
 }
 
 .ellipse7 {
   position: absolute;
-  width: 8px;
-  height: 8px;
-  left: 31px;
-  top: 3px;
+  margin-left: 31px;
+  margin-top: 3px;
 }
 
 .ellipse8 {
   position: absolute;
-  width: 16px;
-  height: 16px;
-  left: 9px;
-  top: 14px;
+  margin-left: 9px;
+  margin-top: 14px;
 }
 
-.pepelane {
-  position: absolute;
+.logoName {
+  margin-left: 17.9px;
+  margin-top: 65.49px;
   width: 104.2px;
   height: 20.62px;
-  left: 65.9px;
-  top: 17.49px;
 }
 
-.headerText {
-  position: absolute;
+.logoText {
+  line-height: 24px;
   width: 255px;
   height: 24px;
-  left: 235px;
-  top: 16px;
-
   font-family: 'Codec Pro';
-  font-style: normal;
-  font-weight: 300;
-  font-size: 16px;
-  line-height: 152%;
   color: #677B8F;
+  margin-left: 64.9px;
+  margin-top: 64px;
+  font-size: 16px;
 }
 
 .nightMode {
-  position: absolute;
-  left: 8.33%;
-  right: 8.33%;
-  top: 8.33%;
-  bottom: 8.33%;
+  margin-left: 288px;
+  margin-top: 66px;
+}
+
+.nightModeText {
+  margin-left: 18px;
+  margin-top: 64px;
+  width: 82px;
+  height: 24px;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: 'Codec Pro';
+  font-weight: 100;
+  font-style: normal;
+  color: #677B8F;
+}
+
+.message {
+  margin-left: 107px;
+  margin-top: 67px;
 }
 
 .userName {
-  position: absolute;
+  margin-left: 106px;
+  margin-top: 64px;
   width: 109px;
   height: 24px;
-  left: 1131px;
-  top: 16px;
-  font-family: Codec Pro;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 152%;
+  line-height: 24px;
+  font-family: 'Codec Pro';
+  font-weight: 700;
   color: #012345;
 }
 
 .userPhoto {
-  position: absolute;
   width: 56px;
   height: 56px;
-  left: 1256px;
-  top: 0px;
-  background: url(.png);
+  margin-left: 16px;
+  margin-top: 48px;
+}
+
+.userPhoto img {
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 40px;
+}
+
+/* main */
+
+
+.rent {
+  height: 952px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  background: #F3F4F7;
+  border-radius: 48px;
+}
+
+.rentMenu {
+  height: 144px;
+  display: flex;
+}
+
+.rentText {
+  margin-left: 64px;
+  margin-top: 56px;
+  width: 313px;
+  height: 48px;
+  line-height: 48px;
+  font-family: 'Codec Pro';
+  font-weight: bold;
+  font-size: 40px;
+}
+
+.rentText a {
+  color: #4959FF;
+}
+
+.rentText img {
+  margin-left: 18px;
+  vertical-align: middle;
+}
+
+.addText {
+  margin-left: 726px;
+  margin-top: 68px;
+  width: 83px;
+  height: 28px;
+  line-height: 28px;
+  font-family: Codec Pro;
+  font-weight: bold;
+  font-size: 20px;
+  color: #4959FF;
+}
+
+.addButton {
+  margin-left: 20px;
+  margin-top: 56px;
+}
+
+.addButton img {
+  position: relative;
+}
+
+.ButtonСross {
+  z-index: 1;
+  left: -34px;
+  top: -17px;
+}
+
+.rentObjects {
+  display: flex;
+  flex-wrap: wrap;
+
+  justify-content: center;
+}
+
+.rentObj {
+  width: 373.33px;
+  height: 164px;
+  background: #FCFCFC;
+  border-radius: 32px;
+  margin: 16px;
+}
+
+.rentObj .rentObjImg {
+  float: left;
+  margin-left: 32px;
+  margin-top: 24px;
+}
+
+.rentObjText {
+  display: inline-block;
+  width: 197px;
+  height: 36px;
+  margin-left: 30px;
+  margin-top: 40px;
+}
+
+.rentObjText h3 {
+  font-family: 'Codec Pro';
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.rentObjText p {
+  font-family: 'Codec Pro';
+  font-weight: 300;
+  font-size: 12px;
+  color: #677B8F;
+  margin-top: 12px;
+}
+
+#cost {
+  font-family: 'Codec Pro';
+  font-weight: bold;
+  font-size: 14px;
+  color: #F84AB3;
 }
