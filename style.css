@@ -66,17 +66,21 @@ a {
 
 
   .rentObjText p {
-    display: none;
-  }
-
-  .rentObjText h3 {
-    display: none;
+    
   }
 
   .rentObjText {
     display: none;
   }
 
+  .rentObj {
+    display: flex;
+    max-width: 100%;
+  }
+
+  .rentObjImg {
+    max-width: 100%;
+  }
 
 }
 
@@ -233,10 +237,11 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  box-sizing: content-box;
+
 }
 
 .rentObj {
-  display: block;
   width: 373.33px;
   height: 164px;
   background: #FCFCFC;
