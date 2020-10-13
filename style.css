@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 a {
@@ -27,23 +28,19 @@ a {
       font-style: normal;
     }
 
-@media screen and (max-width: 375px) {
-
-  .container {
-    max-width: 375px;
-    height: 100%;
-  }
-
-  .content {
-    max-width: 375px;
-    height: auto;
-    margin: 0;
-
-  }
+@media screen and (max-width: 1100px) {
 
   .logoText {
-      display: none;
+    display: none;
   }
+
+  .rentMenu {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 737px) {
 
   .nightModeText {
     display: none;
@@ -53,37 +50,51 @@ a {
     display: none;
   }
 
-  .logo {
-    margin-left: 16px;
-    margin-top: 14px;
-    width: 32px;
-    height: 32px;
-    border: 2px solid red;
-  }
-
   .logoName {
-    border: 2px solid black;
-    margin-left: 11.93px;
-    width: 69.47px;
-    height: 13.75px;
+    display: none;
   }
 }
 
+@media screen and (max-width: 550px) {
+
+  .rentText span {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 420px) {
+
+
+  .rentObjText p {
+    display: none;
+  }
+
+  .rentObjText h3 {
+    display: none;
+  }
+
+  .rentObjText {
+    display: none;
+  }
+
+
+}
+
+/* контейнеры */
 
 .container {
-  display: block;
   max-width: 1440px;
+  width: 100%;
   height: 100%;
   margin-left: auto;
   margin-right: auto;
-  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .content {
-  display: block;
   width: 100%;
   max-width: 1312px;
-  height: auto;
   margin-left: auto;
   margin-right: auto;
 }
@@ -92,35 +103,21 @@ a {
 
 .topMenu {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   height: 144px;
+  text-align: center;
+  justify-content: space-between;
 }
 
 .logo {
-  position: absolute;
-  width: 48px;
-  height: 48px;
-  box-sizing: content-box;
+  display: flex;
+  flex-grow: 1;
+  align-items: center;
+  text-align: center;
+  max-width: 48px;
+  max-height: 48px;
 }
 
-.logo1 {
-  position: absolute;
-  margin-top: 22px;
-  margin-left: 16px;
-}
-
-.logo2 {
-  position: absolute;
-  margin-top: 3px;
-  margin-left: 31px;
-}
-
-.logo3 {
-  position: absolute;
-  margin-top: 14px;
-  margin-left: 9px;
-}
 
 .logoName {
   max-width: 104.2px;
@@ -138,8 +135,6 @@ a {
   color: #677B8F;
 }
 
-.nightMode {
-}
 
 .nightModeText {
   width: 82px;
@@ -152,7 +147,11 @@ a {
   color: #677B8F;
 }
 
-.message {
+.user {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
 }
 
 .userName {
@@ -164,8 +163,6 @@ a {
   color: #012345;
 }
 
-.userPhoto {
-}
 
 .userPhoto img {
   border-radius: 40px;
@@ -175,21 +172,24 @@ a {
 
 
 .rent {
-  height: 952px;
-  border: 1px solid rgb(255, 255, 255);
-  border-radius: 10px;
   background: #F3F4F7;
   border-radius: 48px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
+
 .rentMenu {
+  max-width: 1184px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
   height: 144px;
   display: flex;
+  align-items: center;
 }
 
 .rentText {
-  margin-left: 64px;
-  margin-top: 56px;
   width: 313px;
   height: 48px;
   line-height: 48px;
@@ -198,64 +198,54 @@ a {
   font-size: 40px;
 }
 
-.rentText a {
+.rentText span {
   color: #4959FF;
 }
 
-.rentText img {
-  margin-left: 18px;
-  vertical-align: middle;
-}
-
 .addText {
-  margin-left: 726px;
-  margin-top: 68px;
-  width: 83px;
-  height: 28px;
-  line-height: 28px;
-  font-family: Codec Pro;
+  margin-left: auto;
+  align-items: center;
+  font-family: 'Codec Pro';
   font-weight: bold;
   font-size: 20px;
   color: #4959FF;
 }
 
 .addButton {
-  display: flex;
-  margin-left: 20px;
-  margin-top: 56px;
+  margin-left: 10px;
   width: 48px;
   height: 48px;
   background-color: #4959FF;
   border-radius: 16px;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-weight: lighter;
+  display: flex;
   justify-content: center;
+  box-sizing: border-box;
 }
 
-.addButton img {
-  margin-top: 17px;
-}
-
-.ButtonСross {
-  z-index: 1;
-  left: -34px;
-  top: -17px;
+.addButton .cross {
+  margin-top: 4px;
 }
 
 .rentObjects {
   display: flex;
   flex-wrap: wrap;
-
   justify-content: center;
 }
 
 .rentObj {
+  display: block;
   width: 373.33px;
   height: 164px;
   background: #FCFCFC;
   border-radius: 32px;
   margin: 16px;
+  box-sizing: border-box;
 }
 
-.rentObj .rentObjImg {
+.rentObjImg {
   float: left;
   margin-left: 32px;
   margin-top: 24px;
