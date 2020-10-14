@@ -1,0 +1,43 @@
+
+.logoText {
+  color: #677B8F;
+}
+
+.nightModeText {
+  color: #677B8F;
+}
+
+.userName {
+  color: #012345;
+}
+
+.rent {
+  background: #F3F4F7;
+}
+
+
+.rentText span {
+  color: #4959FF;
+}
+
+.addText {
+  color: #4959FF;
+}
+
+.addButton {
+  background-color: #4959FF;
+  color: rgb(255, 255, 255);
+}
+
+.rentObj {
+  background: #FCFCFC;
+}
+
+
+.rentObjText p {
+  color: #677B8F;
+}
+
+.rentObjText .cost {
+  color: #F84AB3;
+}

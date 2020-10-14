@@ -66,7 +66,7 @@ a {
 
 
   .rentObjText p {
-    
+
   }
 
   .rentObjText {
@@ -136,9 +136,12 @@ a {
   font-style: normal;
   font-weight: 300;
   font-size: 16px;
-  color: #677B8F;
 }
 
+.nightMode img:hover {
+  background-color: rgb(232, 232, 232);
+  border-radius: 10px;
+}
 
 .nightModeText {
   width: 82px;
@@ -148,7 +151,11 @@ a {
   font-family: 'Codec Pro';
   font-weight: 100;
   font-style: normal;
-  color: #677B8F;
+}
+
+.message img:hover {
+  background-color: rgb(232, 232, 232);
+  border-radius: 3px;
 }
 
 .user {
@@ -164,7 +171,6 @@ a {
   line-height: 24px;
   font-family: 'Codec Pro';
   font-weight: 700;
-  color: #012345;
 }
 
 
@@ -176,7 +182,6 @@ a {
 
 
 .rent {
-  background: #F3F4F7;
   border-radius: 48px;
   padding-left: 10px;
   padding-right: 10px;
@@ -202,9 +207,6 @@ a {
   font-size: 40px;
 }
 
-.rentText span {
-  color: #4959FF;
-}
 
 .addText {
   margin-left: auto;
@@ -212,16 +214,13 @@ a {
   font-family: 'Codec Pro';
   font-weight: bold;
   font-size: 20px;
-  color: #4959FF;
 }
 
 .addButton {
   margin-left: 10px;
   width: 48px;
   height: 48px;
-  background-color: #4959FF;
   border-radius: 16px;
-  color: rgb(255, 255, 255);
   font-size: 30px;
   font-weight: lighter;
   display: flex;
@@ -244,7 +243,6 @@ a {
 .rentObj {
   width: 373.33px;
   height: 164px;
-  background: #FCFCFC;
   border-radius: 32px;
   margin: 16px;
   box-sizing: border-box;
@@ -274,7 +272,6 @@ a {
   font-family: 'Codec Pro';
   font-weight: 300;
   font-size: 12px;
-  color: #677B8F;
   margin-top: 12px;
 }
 
@@ -282,5 +279,4 @@ a {
   font-family: 'Codec Pro';
   font-weight: bold;
   font-size: 14px;
-  color: #F84AB3;
 }
