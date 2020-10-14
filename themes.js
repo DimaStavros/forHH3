@@ -9,8 +9,8 @@ function ChangeTheme()
 {
     let lightTheme = "light.css";
     let darkTheme = "dark.css";
-    let darkLogo = "darkMod/Logo.png";
-    let lightLogo = "Header/Logo.png";
+    let darkLogo = "darkMod/Logo2.png";
+    let lightLogo = "Header/Logo2.png";
     let nameDarkLogo = "darkMod/Pepelane.png";
     let nameLightLogo = "Header/Pepelane.png";
 
