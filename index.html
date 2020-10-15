@@ -56,11 +56,9 @@
         <div class="addText">
           Add new
         </div>
-        <a href="#">
-          <div class="addButton">
+        <button type="button" name="button" class="addButton" id="addButton">      
             <div class="cross">+</div>
-          </div>
-        </a>
+        </button>
       </div>
       <div class="rentObjects">
         <div class="rentObj">
@@ -183,10 +181,23 @@
             <p class="cost">164 $/h</p>
           </div>
         </div>
+        <template id="newRentObj">
+        <div class="rentObj">
+          <div class="rentObjImg">
+            <img src="main/9.png" alt="">
+          </div>
+          <div class="rentObjText">
+              <h3>XR-74 «Cooper»</h3>
+              <p>Brief description of the project,in a few lines.</p>
+              <p class="cost">164 $/h</p>
+          </div>
+        </div>
+        </template>
       </div>
     </div>
   </main>
  </div>
  <script type="text/javascript" src="themes.js"></script>
+  <script type="text/javascript" src="addRent.js"></script>
 </body>
 </html>

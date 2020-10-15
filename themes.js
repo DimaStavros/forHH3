@@ -34,5 +34,4 @@ function ChangeTheme()
     link.setAttribute("href", currTheme);
     logo.setAttribute("src", currLogo);
     nameLogo.setAttribute("src", currNameLogo);
-
 }
