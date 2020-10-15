@@ -225,10 +225,11 @@ a {
   font-weight: lighter;
   display: flex;
   justify-content: center;
+  text-decoration: none;
   box-sizing: border-box;
 }
 
-.addButton .cross {
+.addButton span {
   margin-top: 4px;
 }
 
