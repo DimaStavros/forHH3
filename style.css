@@ -229,6 +229,10 @@ a {
   box-sizing: border-box;
 }
 
+.addButton :active {
+  color: #677B8F;
+}
+
 .addButton span {
   margin-top: 4px;
 }
